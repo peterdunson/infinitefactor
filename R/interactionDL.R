@@ -35,7 +35,7 @@ interactionDL = function(y, X, nrun, burn = 0, thin = 1, delta_rw = 0.0526749,
   es = any(output %in% "errSamples")
   
   p = ncol(X)
-  n = nrow(y)
+  n = length(y)
   
   as = 1
   bs = 0.3
